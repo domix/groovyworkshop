@@ -1,0 +1,4 @@
+Primer comando a ejecutar una vez que esta instalado Maven
+
+
+mvn archetype:generate  -DgroupId=org.springhispano.groovy -DartifactId=workshop -Dversion=1.0-SNAPSHOT -Dpackage=org.springhispano.groovy.workshop -Dname="WorkShop de Groovy en SpringHispano.org" -DarchetypeGroupId=org.codehaus.groovy.maven.archetypes -DarchetypeArtifactId=gmaven-archetype-basic -DarchetypeVersion=1.0-rc-5  -DremoteRepositories=http://repository.codehaus.org   

@@ -10,7 +10,13 @@ println 'Hola mundo'
 
 println "Parametros recibidos $args"
 
+println args
+
+for(String param : args) {
+	System.out.println(param);
+}
+
 /*
- * Observen la diferencia en las comillas simple y dobles
+ * Observen la diferencia en las comillas simple y dobles. GStrings hacen interpolacion de variables
  */
 

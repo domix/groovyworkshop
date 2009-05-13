@@ -10,3 +10,9 @@ param = new Long(5)
 
 println param
 println param.getClass().getName()
+
+
+param = 5
+
+println param
+println param.getClass().getName()

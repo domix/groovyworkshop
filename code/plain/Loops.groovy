@@ -1,26 +1,20 @@
+def contador = 5
 
-//un ciclo for a la manera Java
-System.out.println("Ciclo a la manera Java")
+println contador.class.name
 
-for(int i = 0; i< 5 ;i++ ) {
-	System.out.println("Hola " + i);
+contador.times {
+	println "Iteracion $it"
 }
 
-//un ciclo for a la manera Groovy
-//Truco #1
+
+0.upto (10) {
+	print "$it "
+}
+
 println """
 
-Ciclo a la manera Groovy
-¿A poco no rulea?
-"""
+Ciclo con step"""
 
-//Truco #2
-5.times {
-	println "Hola $it"
+0.step(10, 2) {
+	print "$it "
 }
-
-/*
-Truco 1: Observen como puedo escribir un java.lang.String de varias lineas sin hacer concatenaciones
-Truco 2: ¿?   pista.... 5 es una clase de tipo java.lang.Integer  ¿Esa clase no tiene el metodo times?
-		Es mas, times no es metodo ¿Que rayos es entonces?.....   Un closure
- */

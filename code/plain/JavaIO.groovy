@@ -1,31 +1,11 @@
-//No mam.... que facil
-println new File("JavaIO.groovy").text
-
-println """
-
-
-
-
-
-"""
-
-//Vamos a explorar lo archivos
-home = new File(".")
-println home.getClass().getName()
-dirs = []
-files = []
-
-home.eachDir {
-	dirs << it.name
+// Asi o mas sencillo el I/O
+new File("JavaIO.groovy").eachLine{linea->
+	println linea
 }
 
-home.eachFile {
-	files << it.name
-}
+def codigo = new File("JavaIO.groovy").text
+println codigo
 
-println "Directorios"
-println dirs
-
-println "Archivos"
-println files
-
+def destination = new File("Desti.txt")
+destination.write("Este es el mensaje que voy a guardar")
+println destination.text
